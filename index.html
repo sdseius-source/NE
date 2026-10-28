@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local JSON Stream Searcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Archive Repository Explorer</h1>
+    <p class="subtitle">Direct local streaming search connected directly to search.json.</p>
+
+    <div class="control-panel">
+        <div class="search-box-wrapper">
+            <input type="text" id="searchQuery" placeholder="Type a keyword to scan repository rows directly (e.g., 'Sinatra', 'UFO')...">
+        </div>
+        
+        <div class="status-bar">
+            <span id="status">Connecting to database layout structures...</span>
+            <span id="counter">Matches: 0</span>
+        </div>
+    </div>
+
+    <div id="results" class="results-container"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
